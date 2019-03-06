@@ -1,4 +1,4 @@
-Binder Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thomas-schillaci/VieML.git/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thomas-schillaci/VieML.git/master)
 
 # VieML
 Video information extractor by Machine Learning
