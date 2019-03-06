@@ -1,4 +1,3 @@
-import cv2 as cv
 import tensorflow as tf
 
 mnist = tf.keras.datasets.mnist
