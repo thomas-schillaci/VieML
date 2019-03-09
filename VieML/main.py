@@ -1,21 +1,21 @@
-import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense
+import numpy as np
 
 
 def test():
-    mnist = tf.keras.datasets.mnist
+    model = Sequential()
+    model.add(Dense(16, activation='relu', input_dim=2))
+    model.add(Dense(1, activation='sigmoid'))
+    model.compile(loss='mean_squared_error', optimizer='adam', metrics=['binary_accuracy'])
 
-    (x_train, y_train), (x_test, y_test) = mnist.load_data()
-    x_train, x_test = x_train / 255.0, x_test / 255.0
+    x = np.array([[0, 0], [0, 1], [1, 0], [1, 1]], "float32")
+    y = np.array([[0], [0], [0], [1]], "float32")
 
-    model = tf.keras.models.Sequential([
-        tf.keras.layers.Flatten(input_shape=(28, 28)),
-        tf.keras.layers.Dense(512, activation=tf.nn.relu),
-        tf.keras.layers.Dropout(0.2),
-        tf.keras.layers.Dense(10, activation=tf.nn.softmax)
-    ])
-    model.compile(optimizer='adam',
-                  loss='sparse_categorical_crossentropy',
-                  metrics=['accuracy'])
+    model.fit(x, y, epochs=200)
 
-    model.fit(x_train, y_train, epochs=5)
-    model.evaluate(x_test, y_test)
+    y_predict = model.predict(x).round()
+    print(y_predict)
+
+
+test()
