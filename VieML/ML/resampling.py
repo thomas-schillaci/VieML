@@ -15,11 +15,14 @@ def resample(image,zoom,i):
                 2 : Bicubic
     :return: A resampled image
     '''
+    result = ndimage.zoom(image, zoom=zoom, order = i)
+    return result
+
+def plot(image,zoom,i):
     fig = plt.figure()
     ax1 = fig.add_subplot(121)  # left side
     ax2 = fig.add_subplot(122)  # right side
-    result = ndimage.zoom(image, zoom=zoom, order = i)
+    result = resample(image,zoom,i)
     ax1.imshow(image)
     ax2.imshow(result)
     plt.show()
-    return result
