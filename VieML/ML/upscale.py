@@ -3,8 +3,22 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.optimizers import SGD
 from keras.datasets import mnist
 from keras.utils import np_utils
+import os
+from scipy import misc
+from VieML.ML.resampling import resample
+from sklearn.model_selection import train_test_split
 
-(x_train, y_train), (x_test, y_test) = None
+zoom = 200./1400.
+path = ''
+high_quality_images = []
+low_quality_images = []
+for image_name in os.listdir(path):
+    complete_path = path + image_name
+    image = misc.imread(complete_path)
+    high_quality_images.append(image)
+    low_quality_images.append(resample(image = image, zoom = zoom, i = 0))
+
+x_train, x_test, y_train, y_test = train_test_split(low_quality_images,high_quality_images,test_size = 0.05)
 
 model = Sequential()
 
