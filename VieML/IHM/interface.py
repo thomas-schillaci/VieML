@@ -1,34 +1,43 @@
-from PySide2.QtWidgets import (QLineEdit, QPushButton, QApplication,
-    QVBoxLayout, QDialog, QFrame)
-from PySide2.QtCore import SLOT
+
+from PySide2 import QtCore, QtWidgets, QtGui
 import sys
 
 
-class Fenetre(QDialog):
+class Fenetre(QtWidgets.QDialog):
 
     def __init__(self):
         super(Fenetre, self).__init__()
         # Create widgets
-        self.button = QPushButton("import")
-        self.button2= QPushButton("upgrade")
-        self.button3=QPushButton("save")
-        self.image=QFrame()
-        # Create layout and add widgets
-        layout = QVBoxLayout()
+        self.button = QtWidgets.QPushButton("import")
+        self.button2 = QtWidgets.QPushButton("upgrade")
+        self.button3 = QtWidgets.QPushButton("save")
+        self.image = QtWidgets.QLabel()
+        self.pixmap =QtGui.QPixmap()
+        self.image.setPixmap(self.pixmap)
+        # Create layout and add widget
+        self.button3.hide()
+        self.button2.hide()
+        self.button.clicked.connect(self.upgrade)
+        self.button.clicked.connect(self.explorer)
+        layout = QtWidgets.QVBoxLayout()
         layout.addWidget(self.button)
         layout.addWidget(self.button2)
         layout.addWidget(self.button3)
         layout.addWidget(self.image)
-        # Set dialog layout
+
+        # Set  layout
         self.setLayout(layout)
-
-
-
-
+        #definition fonctions
+    def upgrade(self):
+        self.button3.show()
+        self.button2.show()
+    def explorer(self):
+        fileName = QtWidgets.QFileDialog.getOpenFileName(self, caption="open file")
+        print(fileName)
 
 if __name__ == '__main__':
     # Create the Qt Application
-    app = QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     # Create and show the form
     fenetre = Fenetre()
     fenetre.show()
