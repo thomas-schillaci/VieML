@@ -24,6 +24,7 @@ class Fenetre(QtWidgets.QDialog):
         layout.addWidget(self.button2)
         layout.addWidget(self.button3)
         layout.addWidget(self.image)
+        layout.maximumSize()
 
         # Set  layout
         self.setLayout(layout)
@@ -32,13 +33,13 @@ class Fenetre(QtWidgets.QDialog):
         self.button3.show()
         self.button2.show()
     def explorer(self):
-        fileName = QtWidgets.QFileDialog.getOpenFileName(self, caption="open file")
-        print(fileName)
+        fileName,_ = QtWidgets.QFileDialog.getOpenFileName(self, caption="open file")
+        self.image.setPixmap(fileName)
 
 if __name__ == '__main__':
     # Create the Qt Application
     app = QtWidgets.QApplication(sys.argv)
-    # Create and show the form
+    # Create and show the window
     fenetre = Fenetre()
     fenetre.show()
     # Run the main Qt loop
