@@ -3,7 +3,8 @@ import QtQuick 2.0
     Item {
     id : container
     property alias cellName : buttonText.text
-    anchors.horizontalCenter: page.horizontalCenter
+    property alias cellColor : rectangle.color
+
     width: 20; height: 15
 
     Rectangle {
@@ -12,7 +13,7 @@ import QtQuick 2.0
     border.color : "white"
     anchors.fill : parent
     anchors.centerIn: parent
-    color : "red"
+
 
 
 

@@ -1,13 +1,13 @@
 import QtQuick 2.0
 
 Rectangle {
-    width: 200
-    height: 200
+    width: 500
+    height: 500
 
 
     Rectangle {
-    color : red
-    border.color : "black"
+
+    border.color : "red"
     anchors.centerIn : parent
 
     Text {
@@ -25,12 +25,12 @@ Rectangle {
 
     Grid {
      id: colorPicker
-     x: 4; anchors.bottom: page.bottom; anchors.bottomMargin: 4
-     rows: 1; columns: 3; spacing: 3
+     x: 40; y : 450 ; anchors.bottom: page.bottom; anchors.bottomMargin: 4
+     rows: 1; columns: 3; spacing: 100
 
-    Button {  cellName : "Import"  }
-    Button { cellName : "Save" }
-    Button { cellName : "Upgrade" }
+       Button {  cellName : "Import"  }
+       Button { cellName : "Save" }
+       Button { cellName : "Upgrade" }
 }
 
 
