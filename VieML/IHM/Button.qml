@@ -1,37 +1,39 @@
 import QtQuick 2.0
 
-    Item {
-    id : container
-    property alias cellName : buttonText.text
-    property alias cellColor : rectangle.color
 
-    width: 20; height: 15
-
-    Rectangle {
-
-    id: rectangle
-    border.color : "white"
-    anchors.fill : parent
-    anchors.centerIn: parent
+Item {
+ id:container
+ height :40
+ width : 100
+ property alias cellColor : rectangle.color
+ property alias cellName : buttonText.text
 
 
 
-
-
-    Text {
-    id : buttonText
-    anchors.centerIn: parent
-    font.pointSize: 10; font.bold: true
-
-
-    }
-
-    }
-
-    }
+ Rectangle {
+ id:rectangle
+ anchors.fill:parent
+ border.color:"black"
 
 
 
+
+
+  Text {
+  id: buttonText
+
+  anchors.centerIn:parent
+
+
+  }
+
+  }
+
+
+
+
+
+}
 
 
 
