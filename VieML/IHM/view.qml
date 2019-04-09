@@ -25,7 +25,12 @@ id: fileDialog
 title: "Choose a file"
 selectExisting: true
 selectMultiple: false
-        selectFolder: false
+selectFolder: false
+onFileUrlChanged: {
+
+text1.text=fileDialog.fileUrl
+image.source=fileDialog.fileUrl
+}
 
 
 
@@ -36,7 +41,7 @@ selectMultiple: false
 Grid {
 x:40
 y:350
-rows:2
+rows:3
 spacing:50
 
 Button {  text:"importer"
@@ -47,7 +52,20 @@ Button {  text:"importer"
     }
  }
 Button2{cellName :"rogner" ; cellColor :"grey" }
+
+Rectangle {
+height:40
+width:200
+color:"red"
+
+Text {
+id:text1
+ text:"path of the image selected : "
 }
+}
+}
+
+
 
 
 
@@ -68,12 +86,25 @@ Item  {
 
 anchors.centerIn :parent
 
-Button2 { cellName:" importer l'image ici"; cellColor:"white" ; width : 150
+Image {
+cache:false
+id:image
+       anchors.fill: parent
+       source: "logo.jpg"
+       sourceSize.width: 1024
+       sourceSize.height: 1024
+    }
+
+
+/*Button2 {
+id: importer_demande
+cellName:" importer l'image ici"; cellColor:"white" ; width : 150
 anchors.centerIn:parent
 
 
 
 }
+*/
 
 }
 
