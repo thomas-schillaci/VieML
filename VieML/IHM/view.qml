@@ -82,9 +82,7 @@ width:250
 border.color:"black"
 anchors.centerIn:parent
 
-Item  {
 
-anchors.centerIn :parent
 
 Image {
 cache:false
@@ -106,7 +104,7 @@ anchors.centerIn:parent
 }
 */
 
-}
+
 
 }
 
