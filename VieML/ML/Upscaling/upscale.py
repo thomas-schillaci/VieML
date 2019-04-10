@@ -48,7 +48,6 @@ y_test = np.array(y_test)
 #input_shape = low_quality_images[0].shape
 input_shape = len(low_quality_images[0])
 output_shape = len(high_quality_images[0])
-print(output_shape)
 
 model = Sequential()
 '''
@@ -58,23 +57,23 @@ model.add(Conv2D(64, (4, 4), strides = 1, activation="relu"))
 model.add(MaxPooling2D(pool_size = (2,2), dim_ordering = "th"))
 model.add(Flatten())
 '''
-model.add(Dense(units = 4000, activation='relu',
+model.add(Dense(units = 1000, activation='relu', #5000
                 kernel_initializer='uniform'
                 ,input_dim=input_shape))
 #model.add(Dense(8000, activation="relu"))
 model.add(Dropout(0.2))
-model.add(Dense(5000, activation="relu",kernel_initializer='uniform'))
+model.add(Dense(2000, activation="relu",kernel_initializer='uniform')) #4000
 model.add(Dropout(0.2))
 model.add(Dense(output_shape ,kernel_initializer='uniform'))
 
 model.compile(loss="mse", optimizer='adam', metrics=['mae'])
 
-model.fit(x_train, y_train, batch_size=40, epochs=150, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, batch_size=40, epochs=10, validation_data=(x_test, y_test)) #40 #150
 
-model.save('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/model.h5')
+model.save('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
 
 from keras.models import load_model
-model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/model.h5')
+model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
 
 liste = model.predict(x_test)
 img = liste[0].reshape((int(416*zoom2),int(448*zoom2)))
