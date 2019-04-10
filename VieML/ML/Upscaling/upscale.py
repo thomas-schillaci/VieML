@@ -48,7 +48,6 @@ y_test = np.array(y_test)
 #input_shape = low_quality_images[0].shape
 input_shape = len(low_quality_images[0])
 output_shape = len(high_quality_images[0])
-print(output_shape)
 
 model = Sequential()
 '''
