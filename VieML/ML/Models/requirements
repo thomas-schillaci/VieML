@@ -1,0 +1,14 @@
+Multi_angle
+
+name : "multi_angle_model.h5"
+input : list of images
+input shape :  x
+output shape : y
+
+
+Upscaling
+
+name : "upscaling_model.h5"
+input : images
+input shape :  y
+output shape : z
