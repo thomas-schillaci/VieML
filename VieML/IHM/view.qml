@@ -76,11 +76,13 @@ id:text1
 
 Rectangle {
 
+x:375
+y:200
 height : 200
 width:250
 
 border.color:"black"
-anchors.centerIn:parent
+
 
 
 
