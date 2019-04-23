@@ -12,6 +12,8 @@ y_test = np_utils.to_categorical(y_test)
 
 model = Sequential()
 
+print(y_train.shape)
+
 model.add(Conv2D(32, (5, 5), input_shape=(1, 28, 28), activation="relu", data_format="channels_first"))
 model.add(MaxPooling2D())
 model.add(Conv2D(64, (5, 5), activation="relu"))
