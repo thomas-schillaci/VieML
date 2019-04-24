@@ -21,6 +21,7 @@ def process(img_list):
     upscaling_model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
     multi_angle_model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/multi_angle_model.h5')
     flatten_res = multi_angle_model.predict(format_images)
+    flatten_res = resample(image=flatten_res,zoom=2,i=0)
     flatten_res = upscaling_model.predict(flatten_res)
     res = flatten_res.reshape(int(shape[0]),int(shape[1]))
     res = sc.inverse_transform(res)
