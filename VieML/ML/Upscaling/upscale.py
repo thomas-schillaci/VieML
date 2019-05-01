@@ -16,15 +16,16 @@ sc1 = MinMaxScaler(feature_range = (0,1))
 sc2 = MinMaxScaler(feature_range = (0,1))
 
 
-zoom1 = 1/16. #448*416
-zoom2 = 1/8.
-path = 'C:/Users/leovu/Desktop/coil-20-unproc/'
+zoom1 = 1/4. #128*128
+zoom2 = 1/2.
+path = 'C:/Users/leovu/PycharmProjects/VieML/VieML/coil-100/'
 high_quality_images = []
 low_quality_images = []
 for image_name in os.listdir(path):
     complete_path = path + image_name
     image_hq = cv2.imread(complete_path,cv2.IMREAD_GRAYSCALE)
     image_lq = resample(image = image_hq, zoom = zoom1, i=0).astype("float64")
+    image_lq = resample(image=image_lq, zoom=1/zoom2, i=0).astype("float64")
     image_hq = resample(image = image_hq, zoom = zoom2, i = 0).astype("float64")
     #image_lq = np.ndarray.flatten(image_lq).astype("float32") / 255.
     #image_hq = np.ndarray.flatten(image_hq).astype("float32") / 255.
@@ -37,7 +38,6 @@ for image_name in os.listdir(path):
     low_quality_images.append(image_lq)
 
 
-
 x_train, x_test, y_train, y_test = train_test_split(low_quality_images,high_quality_images,test_size = 0.01)
 
 x_train = np.array(x_train)
@@ -48,7 +48,6 @@ y_test = np.array(y_test)
 #input_shape = low_quality_images[0].shape
 input_shape = len(low_quality_images[0])
 output_shape = len(high_quality_images[0])
-
 model = Sequential()
 '''
 model.add(Conv2D(64, (4, 4), strides= 1,input_shape=input_shape, activation="relu", data_format="channels_first"))
@@ -62,13 +61,15 @@ model.add(Dense(units = 1000, activation='relu', #5000
                 ,input_dim=input_shape))
 #model.add(Dense(8000, activation="relu"))
 model.add(Dropout(0.2))
-model.add(Dense(2000, activation="relu",kernel_initializer='uniform')) #4000
+model.add(Dense(1000, activation="relu",kernel_initializer='uniform')) #4000
+model.add(Dropout(0.2))
+model.add(Dense(1000, activation="relu",kernel_initializer='uniform'))
 model.add(Dropout(0.2))
 model.add(Dense(output_shape ,kernel_initializer='uniform'))
 
 model.compile(loss="mse", optimizer='adam', metrics=['mae'])
 
-model.fit(x_train, y_train, batch_size=40, epochs=10, validation_data=(x_test, y_test)) #40 #150
+model.fit(x_train, y_train, batch_size=100, epochs=100, validation_data=(x_test, y_test)) #40 #150
 
 model.save('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
 
@@ -76,12 +77,20 @@ from keras.models import load_model
 model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
 
 liste = model.predict(x_test)
-img = liste[0].reshape((int(416*zoom2),int(448*zoom2)))
+
+img = y_test[0].reshape((int(128*zoom2),int(128*zoom2)))
 img = sc2.inverse_transform(img)
 plt.imshow(img)
 plt.show()
 
-img = y_train[0].reshape((int(416*zoom2),int(448*zoom2)))
+img = x_test[0].reshape((int(128*zoom2),int(128*zoom2)))
+img = sc1.inverse_transform(img)
+plt.imshow(img)
+plt.show()
+
+img = liste[0].reshape((int(128*zoom2),int(128*zoom2)))
 img = sc2.inverse_transform(img)
 plt.imshow(img)
 plt.show()
+
+#pas assez d'importance sur les détails au centre de l'image, et puis pour des images qui auraient un fond non noir ça pourrait poser problème
