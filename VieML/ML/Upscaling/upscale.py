@@ -18,7 +18,7 @@ sc2 = MinMaxScaler(feature_range = (0,1))
 
 zoom1 = 1/4. #128*128
 zoom2 = 1/2.
-path = 'C:/Users/leovu/PycharmProjects/VieML/VieML/coil-100/'
+path = 'C:/Users/leovu/Desktop/coil-100/'
 high_quality_images = []
 low_quality_images = []
 for image_name in os.listdir(path):
@@ -56,20 +56,22 @@ model.add(Conv2D(64, (4, 4), strides = 1, activation="relu"))
 model.add(MaxPooling2D(pool_size = (2,2), dim_ordering = "th"))
 model.add(Flatten())
 '''
-model.add(Dense(units = 1000, activation='relu', #5000
+model.add(Dense(units = 1500, activation='relu', #5000
                 kernel_initializer='uniform'
                 ,input_dim=input_shape))
 #model.add(Dense(8000, activation="relu"))
 model.add(Dropout(0.2))
-model.add(Dense(1000, activation="relu",kernel_initializer='uniform')) #4000
+model.add(Dense(1500, activation="relu",kernel_initializer='uniform')) #4000
 model.add(Dropout(0.2))
-model.add(Dense(1000, activation="relu",kernel_initializer='uniform'))
+model.add(Dense(1500, activation="relu",kernel_initializer='uniform'))
+model.add(Dropout(0.2))
+model.add(Dense(1500, activation="relu",kernel_initializer='uniform'))
 model.add(Dropout(0.2))
 model.add(Dense(output_shape ,kernel_initializer='uniform'))
 
 model.compile(loss="mse", optimizer='adam', metrics=['mae'])
 
-model.fit(x_train, y_train, batch_size=100, epochs=100, validation_data=(x_test, y_test)) #40 #150
+model.fit(x_train, y_train, batch_size=100, epochs=400, validation_data=(x_test, y_test))
 
 model.save('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
 
