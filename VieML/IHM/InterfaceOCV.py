@@ -38,16 +38,16 @@ class Fenetre(QtWidgets.QDialog):
         cap = cv2.VideoCapture(self.adresse)
         i=1
         ret, frame = cap.read();
-        r = cv2.selectROI(frame, False)
-        imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+        r = cv2.selectROI(frame,False)
+        imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0]+128)]
         cv2.imshow('frame', imCrop)
         self.ListeFrame.append(imCrop)
         i = i + 1
         while(i<int(cap.get(cv2.CAP_PROP_FRAME_COUNT))):
             ret, frame = cap.read();
-            imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+            imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0]+128)]
             cv2.imshow('frame',imCrop)
-            cv2.waitKey(125)
+            cv2.waitKey(0)
             self.ListeFrame.append(imCrop)
             i=i+1
     def upgrade(self):
@@ -74,8 +74,6 @@ class Fenetre(QtWidgets.QDialog):
             out.write(self.ListeFrame[i])
         out.release()
         cv2.destroyAllWindows()
-
-
 
 
 if __name__ == '__main__':
