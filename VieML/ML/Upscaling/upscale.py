@@ -8,30 +8,32 @@ from keras_preprocessing import image as img
 import numpy as np
 from VieML.ML.resampling import resample
 from sklearn.model_selection import train_test_split
-import cv2
+import cv2 as cv
 import talos
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
-sc1 = MinMaxScaler(feature_range = (0,1))
-sc2 = MinMaxScaler(feature_range = (0,1))
+#sc1 = MinMaxScaler(feature_range = (0,1))
+#sc2 = MinMaxScaler(feature_range = (0,1))
 
 
-zoom1 = 1/4. #128*128
-zoom2 = 1/2.
-path = 'C:/Users/leovu/Desktop/coil-100/'
+zoom1 = 1/2. #128*128 #1/2
+zoom2 = 1
+path = 'C:/Users/leovu/PycharmProjects/VieML/VieML/coil-100/'
 high_quality_images = []
 low_quality_images = []
 for image_name in os.listdir(path):
     complete_path = path + image_name
+    '''
     image_hq = cv2.imread(complete_path,cv2.IMREAD_GRAYSCALE)
     image_lq = resample(image = image_hq, zoom = zoom1, i=0).astype("float64")
     image_lq = resample(image=image_lq, zoom=1/zoom2, i=0).astype("float64")
     image_hq = resample(image = image_hq, zoom = zoom2, i = 0).astype("float64")
-    #image_lq = np.ndarray.flatten(image_lq).astype("float32") / 255.
-    #image_hq = np.ndarray.flatten(image_hq).astype("float32") / 255.
     image_lq = sc1.fit_transform(image_lq)
     image_hq = sc2.fit_transform(image_hq)
     #image_lq = np.expand_dims(image_lq, axis=0)
+    '''
+    image_lq = resample(cv.imread(complete_path, cv.IMREAD_GRAYSCALE), zoom1, 0).astype('float32') / 255
+    image_hq = resample(cv.imread(complete_path, cv.IMREAD_GRAYSCALE), zoom2, 0).astype('float32') / 255
     image_lq = np.ndarray.flatten(image_lq)
     image_hq = np.ndarray.flatten(image_hq)
     high_quality_images.append(image_hq)
@@ -77,22 +79,22 @@ model.save('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model
 
 from keras.models import load_model
 model = load_model('C:/Users/leovu/PycharmProjects/VieML/VieML/ML/Models/upscaling_model.h5')
-
+'''
 liste = model.predict(x_test)
 
 img = y_test[0].reshape((int(128*zoom2),int(128*zoom2)))
-img = sc2.inverse_transform(img)
+#img = sc2.inverse_transform(img)
 plt.imshow(img)
 plt.show()
 
 img = x_test[0].reshape((int(128*zoom2),int(128*zoom2)))
-img = sc1.inverse_transform(img)
+#img = sc1.inverse_transform(img)
 plt.imshow(img)
 plt.show()
 
 img = liste[0].reshape((int(128*zoom2),int(128*zoom2)))
-img = sc2.inverse_transform(img)
+#img = sc2.inverse_transform(img)
 plt.imshow(img)
 plt.show()
-
+'''
 #pas assez d'importance sur les détails au centre de l'image, et puis pour des images qui auraient un fond non noir ça pourrait poser problème
