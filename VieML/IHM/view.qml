@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Window 2.0
 import QtQuick 2.12
 import QtQuick.Controls 1.4
+import QtMultimedia 5.12
 
 
 
@@ -29,7 +30,7 @@ selectFolder: false
 onFileUrlChanged: {
 
 text1.text=fileDialog.fileUrl
-image.source=fileDialog.fileUrl
+mediaPlayer.source=fileDialog.fileUrl
 }
 
 
@@ -76,22 +77,30 @@ id:text1
 
 Rectangle {
 
+x:375
+y:200
 height : 200
 width:250
 
 border.color:"black"
-anchors.centerIn:parent
 
 
 
-Image {
-cache:false
-id:image
-       anchors.fill: parent
-       source: "logo.jpg"
-       sourceSize.width: 1024
-       sourceSize.height: 1024
+
+MediaPlayer {
+        id: mediaPlayer
+        autoPlay: true
+        autoLoad: true
+        loops:MediaPlayer.Infinite
+
     }
+
+    VideoOutput {
+        id:videoOutput
+        source:mediaPlayer
+        anchors.fill: parent
+    }
+
 
 
 /*Button2 {
