@@ -52,6 +52,7 @@ class Fenetre(QtWidgets.QDialog):
             cv2.imshow('frame',imCrop)
             cv2.waitKey(0)
             self.ListeFrame.append(imCrop)
+
             i=i+1
     def upgrade(self):
         self.button3.show()
