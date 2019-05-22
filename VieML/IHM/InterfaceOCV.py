@@ -42,14 +42,16 @@ class Fenetre(QtWidgets.QDialog):
         i=1
         ret, frame = cap.read();
         r = cv2.selectROI(frame,False)
-        imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0]+128)]
-        cv2.imshow('frame', imCrop)
-        self.ListeFrame.append(imCrop)
+        imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+        cropped=cv2.resize(imCrop,(128,128))
+        cv2.imshow('frame', cropped)
+        self.ListeFrame.append(cropped)
         i = i + 1
         while(i<int(cap.get(cv2.CAP_PROP_FRAME_COUNT))):
             ret, frame = cap.read();
-            imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0]+128)]
-            cv2.imshow('frame',imCrop)
+            imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+            cropped = cv2.resize(imCrop, (128, 128))
+            cv2.imshow('frame', cropped)
             cv2.waitKey(0)
             self.ListeFrame.append(imCrop)
 
@@ -72,7 +74,7 @@ class Fenetre(QtWidgets.QDialog):
 
     def save(self):
         frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-        out = cv2.VideoWriter('VieML_'+self.filename+'.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
+        out = cv2.VideoWriter('C:/Users/quent/Desktop/VieML.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
         for i in range (len(self.ListeFrame)):
             out.write(self.ListeFrame[i])
         out.release()
@@ -87,17 +89,19 @@ class Fenetre(QtWidgets.QDialog):
             j = 1
             ret, frame = cap.read();
             r = cv2.selectROI(frame, False)
-            imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0] + 128)]
+            imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+            cropped = cv2.resize(imCrop, (128, 128))
             cv2.imshow('frame', imCrop)
-            self.ListeFrame.append(imCrop)
+            self.ListeFrame.append(cropped)
             j = j + 1
             while (j < int(cap.get(cv2.CAP_PROP_FRAME_COUNT))):
                 ret, frame = cap.read();
-                imCrop = frame[int(r[1]):int(r[1] + 128), int(r[0]):int(r[0] + 128)]
-                self.ListeFrame.append(imCrop)
+                imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+                cropped = cv2.resize(imCrop, (128, 128))
+                self.ListeFrame.append(cropped)
                 j = j + 1
             frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-            out = cv2.VideoWriter("C:/Users/Francois/PycharmProjects/VieML/VieML/crops/"+ 'VieML '+ str(i)+ ".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
+            out = cv2.VideoWriter('C:/Users/quent/Desktop/PostTraitement/VieML '+str(i)+".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
                                   (frame_width, frame_height))  # 2eme parametre=fps de la video
             for i in range(len(self.ListeFrame)):
                 out.write(self.ListeFrame[i])
