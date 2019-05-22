@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad80f126-8f0b-4100-b5d3-19cbcbc4058e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/VieML/IHM/view.qml" beforeDir="false" afterPath="$PROJECT_DIR$/VieML/IHM/view.qml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VieML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VieML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VieML/ML/Upscaling/upscale.py" beforeDir="false" afterPath="$PROJECT_DIR$/VieML/ML/Upscaling/upscale.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,12 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/VieML$interface2.coverage" NAME="interface2 Coverage Results" MODIFIED="1556029418109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$test.coverage" NAME="test Coverage Results" MODIFIED="1556024078903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1555964086622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$interface.coverage" NAME="interface Coverage Results" MODIFIED="1553674269172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$VieML.coverage" NAME="VieML Coverage Results" MODIFIED="1552471466214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/VieML$crop.coverage" NAME="crop Coverage Results" MODIFIED="1556005035194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1555964086622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$interface2.coverage" NAME="interface2 Coverage Results" MODIFIED="1556029418109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$interface.coverage" NAME="interface Coverage Results" MODIFIED="1553674269172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$test.coverage" NAME="test Coverage Results" MODIFIED="1556024078903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,99 +38,13 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-834960502">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="27" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.22" value="2" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.8" value="5" />
-          <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="27" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="ipynb" value="5" />
-          <entry key="md" value="1" />
-          <entry key="png" value="1" />
-          <entry key="py" value="23" />
-          <entry key="qml" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IPNB" value="5" />
-          <entry key="Image" value="1" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="23" />
-          <entry key="QML" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="701" />
-          <entry key="qml" value="5209" />
-          <entry key="txt" value="394" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="763" />
-          <entry key="Python" value="701" />
-          <entry key="QML" value="4840" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/view.qml">
+        <entry file="file://$PROJECT_DIR$/VieML/ML/Upscaling/upscale.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/test.qml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/interface2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="1" selection-end-line="15" />
-              <folding>
-                <element signature="e#1#32#0" expanded="true" />
-              </folding>
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -159,19 +78,14 @@
         <option value="$PROJECT_DIR$/VieML/IHM/test.py" />
         <option value="$PROJECT_DIR$/VieML/IHM/test.qml" />
         <option value="$PROJECT_DIR$/VieML/IHM/view.qml" />
+        <option value="$PROJECT_DIR$/VieML/ML/Upscaling/upscale.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="963" />
-    <option name="y" value="-6" />
-    <option name="width" value="654" />
+    <option name="x" value="960" />
+    <option name="y" value="-9" />
+    <option name="width" value="655" />
     <option name="height" value="690" />
   </component>
   <component name="ProjectView">
@@ -179,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,30 +109,25 @@
               <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
               <item name="VieML" type="462c0819:PsiDirectoryNode" />
               <item name="VieML" type="462c0819:PsiDirectoryNode" />
-              <item name="IHM" type="462c0819:PsiDirectoryNode" />
+              <item name="ML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="VieML" type="462c0819:PsiDirectoryNode" />
+              <item name="VieML" type="462c0819:PsiDirectoryNode" />
+              <item name="ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Upscaling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -258,6 +166,28 @@
       <option name="additionalOptions" value="" />
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="VieML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="crop" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -398,6 +328,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552469473188</updated>
+      <workItem from="1556095422277" duration="775000" />
+      <workItem from="1556883657058" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="commit pour le truc de quentin">
       <created>1553073994993</created>
@@ -514,11 +446,14 @@
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1413000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.3068826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.16979866" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.27611336" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -534,12 +469,13 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50364375" side_tool="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49635628" weight="0.33274022" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="5" side_tool="true" weight="0.3295302" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.2923077" />
@@ -568,9 +504,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit pour le truc de quentin" />
@@ -635,23 +568,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/test2.py" />
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/TEST2.py" />
     <entry file="file://$PROJECT_DIR$/VieML/IHM/crop.py" />
     <entry file="file://$PROJECT_DIR$/VieML/IHM/test3.qml" />
     <entry file="file://$PROJECT_DIR$/VieML/IHM/output.png" />
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/test.py">
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/test.qml" />
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/view.qml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="136">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VieML/IHM/interface2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="221">
           <caret line="15" selection-start-line="1" selection-end-line="15" />
           <folding>
             <element signature="e#1#32#0" expanded="true" />
@@ -659,17 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/test.qml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/view.qml">
+    <entry file="file://$PROJECT_DIR$/VieML/ML/Upscaling/upscale.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
