@@ -4,7 +4,9 @@ import sys
 import numpy as np
 import cv2
 import argparse
-import re
+
+
+
 class Fenetre(QtWidgets.QDialog):
 
     def __init__(self):
@@ -13,8 +15,8 @@ class Fenetre(QtWidgets.QDialog):
         self.count=0;
         self.adresse=" "
         self.ListeFrame=[]
-        self.button1= QtWidgets.QPushButton("Traitement set de donnée")
-        self.button2 = QtWidgets.QPushButton("upgrade")
+        self.button1= QtWidgets.QPushButton( QtGui.QIcon("Database.png"),"Dataset preparation")
+        self.button2 = QtWidgets.QPushButton(QtGui.QIcon("upgrade.png"),"upgrade")
         self.button3 = QtWidgets.QPushButton("save")
         self.button4=QtWidgets.QPushButton("rogner (region fixe)")
         self.button5=QtWidgets.QPushButton("afficher")
@@ -23,12 +25,15 @@ class Fenetre(QtWidgets.QDialog):
         self.button5.clicked.connect(self.afficher)
         self.button3.clicked.connect(self.save)
         self.button1.clicked.connect(self.dataSet)
+        #Design
+
+        #layout
         layout = QtWidgets.QVBoxLayout()
-        layout.addWidget(self.button5)
-        layout.addWidget(self.button2)
-        layout.addWidget(self.button3)
-        layout.addWidget(self.button4)
+        #layout.addWidget(self.button5)
         layout.addWidget(self.button1)
+        layout.addWidget(self.button2)
+        #layout.addWidget(self.button3)
+        #layout.addWidget(self.button4)
         layout.maximumSize()
 
         # Set  layout
@@ -93,14 +98,14 @@ class Fenetre(QtWidgets.QDialog):
             r = cv2.selectROI(frame, False)
             imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
             cropped = cv2.resize(imCrop, (128, 128))
-            cv2.imshow('frame', imCrop)
             self.ListeFrame.append(cropped)
             j = j + 1
             while (j < int(cap.get(cv2.CAP_PROP_FRAME_COUNT))):
                 ret, frame = cap.read();
-                imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
-                cropped = cv2.resize(imCrop, (128, 128))
-                self.ListeFrame.append(cropped)
+                if ret:
+                    imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
+                    cropped = cv2.resize(imCrop, (128, 128))
+                    self.ListeFrame.append(cropped)
                 j = j + 1
             print(Dossier)
             frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
@@ -110,6 +115,7 @@ class Fenetre(QtWidgets.QDialog):
             out.write(self.ListeFrame[i])
             out.release()
             cv2.destroyAllWindows()
+
 
 if __name__ == '__main__':
     # Create the Qt Application
