@@ -4,8 +4,6 @@
     <list default="true" id="ad80f126-8f0b-4100-b5d3-19cbcbc4058e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py" beforeDir="false" afterPath="$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VieML/IHM/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/VieML/IHM/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VieML/IHM/VieML.avi" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +16,7 @@
     <SUITE FILE_PATH="coverage/VieML$interface.coverage" NAME="interface Coverage Results" MODIFIED="1553674269172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$VieML.coverage" NAME="VieML Coverage Results" MODIFIED="1552471466214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/VieML$interface2.coverage" NAME="interface2 Coverage Results" MODIFIED="1558190661734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$InterfaceOCV.coverage" NAME="InterfaceOCV Coverage Results" MODIFIED="1558192979022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$InterfaceOCV.coverage" NAME="InterfaceOCV Coverage Results" MODIFIED="1558517229530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1555964086622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$test.coverage" NAME="test Coverage Results" MODIFIED="1556024078903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$crop.coverage" NAME="crop Coverage Results" MODIFIED="1556005035194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
@@ -51,20 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/interface2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" selection-start-line="1" selection-end-line="15" />
-              <folding>
-                <element signature="e#1#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="229">
+              <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -114,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,6 +335,9 @@
       <updated>1552469473188</updated>
       <workItem from="1557911618233" duration="67000" />
       <workItem from="1558189811578" duration="3207000" />
+      <workItem from="1558193219642" duration="386000" />
+      <workItem from="1558279242307" duration="2186000" />
+      <workItem from="1558516483070" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="commit pour le truc de quentin">
       <created>1553073994993</created>
@@ -462,21 +451,36 @@
       <option name="project" value="LOCAL" />
       <updated>1556005912447</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit en carton2">
+      <created>1558193244132</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558193244132</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Preparation DataSet automatique">
+      <created>1558193422336</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558193422336</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3274000" />
+    <option name="totallyTimeSpent" value="6587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.31343284" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.32356077" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.27611336" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.2611051" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.2611051" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,8 +488,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50364375" side_tool="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49635628" weight="0.33261105" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.2611051" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49520257" weight="0.33261105" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -538,7 +542,8 @@
     <MESSAGE value="&#10;On peut maintenant afficher l'image" />
     <MESSAGE value="commit en carton" />
     <MESSAGE value="commit en carton2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit en carton2" />
+    <MESSAGE value="Preparation DataSet automatique" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparation DataSet automatique" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/IHM/window.py" />
@@ -590,16 +595,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/Test.py">
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/first.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="17">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VieML/IHM/interface2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="255">
           <caret line="15" selection-start-line="1" selection-end-line="15" />
           <folding>
             <element signature="e#1#32#0" expanded="true" />
@@ -607,17 +615,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VieML/IHM/interface.py">
+    <entry file="file://$PROJECT_DIR$/VieML/IHM/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="425">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+        <state relative-caret-position="229">
+          <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
         </state>
       </provider>
     </entry>
