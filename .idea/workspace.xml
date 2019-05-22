@@ -15,13 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VieML$interface.coverage" NAME="interface Coverage Results" MODIFIED="1553674269172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$VieML.coverage" NAME="VieML Coverage Results" MODIFIED="1552471466214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/VieML$interface2.coverage" NAME="interface2 Coverage Results" MODIFIED="1558190661734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$InterfaceOCV.coverage" NAME="InterfaceOCV Coverage Results" MODIFIED="1558192979022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1555964086622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
-    <SUITE FILE_PATH="coverage/VieML$test.coverage" NAME="test Coverage Results" MODIFIED="1556024078903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
     <SUITE FILE_PATH="coverage/VieML$crop.coverage" NAME="crop Coverage Results" MODIFIED="1556005035194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1555964086622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$interface2.coverage" NAME="interface2 Coverage Results" MODIFIED="1557912349541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$interface.coverage" NAME="interface Coverage Results" MODIFIED="1553674269172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$test.coverage" NAME="test Coverage Results" MODIFIED="1556024078903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
+    <SUITE FILE_PATH="coverage/VieML$InterfaceOCV.coverage" NAME="InterfaceOCV Coverage Results" MODIFIED="1558516916764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/VieML/IHM" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,33 +37,46 @@
     <expand />
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-834960502">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="87" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="87" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VieML/IHM/interface2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" selection-start-line="1" selection-end-line="15" />
+            <state relative-caret-position="232">
+              <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
               <folding>
-                <element signature="e#1#32#0" expanded="true" />
+                <element signature="e#1#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,6 +90,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>str</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +121,17 @@
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/VieML/IHM/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="963" />
     <option name="y" value="-6" />
@@ -114,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,19 +158,21 @@
             </path>
             <path>
               <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VieML" type="462c0819:PsiDirectoryNode" />
-              <item name="VieML" type="462c0819:PsiDirectoryNode" />
-              <item name="IHM" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="VieML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,15 +501,16 @@
     <option name="totallyTimeSpent" value="3274000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.31343284" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.32388663" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.27611336" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.2611051" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.26110125" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39609236" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -521,6 +554,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit pour le truc de quentin" />
@@ -601,9 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" selection-start-line="1" selection-end-line="15" />
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,8 +649,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VieML/IHM/InterfaceOCV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
+        <state relative-caret-position="232">
+          <caret line="102" column="45" lean-forward="true" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+          <folding>
+            <element signature="e#1#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

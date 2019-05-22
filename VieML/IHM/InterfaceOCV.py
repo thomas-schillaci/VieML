@@ -72,7 +72,7 @@ class Fenetre(QtWidgets.QDialog):
 
     def save(self):
         frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-        out = cv2.VideoWriter('VieML.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
+        out = cv2.VideoWriter('VieML_'+self.filename+'.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
         for i in range (len(self.ListeFrame)):
             out.write(self.ListeFrame[i])
         out.release()
@@ -97,7 +97,7 @@ class Fenetre(QtWidgets.QDialog):
                 self.ListeFrame.append(imCrop)
                 j = j + 1
             frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-            out = cv2.VideoWriter('VieML '+str(i)+".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
+            out = cv2.VideoWriter("C:/Users/Francois/PycharmProjects/VieML/VieML/crops/"+ 'VieML '+ str(i)+ ".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
                                   (frame_width, frame_height))  # 2eme parametre=fps de la video
             for i in range(len(self.ListeFrame)):
                 out.write(self.ListeFrame[i])
