@@ -123,7 +123,7 @@ x, y, x_train, x_test, y_train, y_test = get_data()
 
 # model = get_model(x_train[0].shape)
 model = load_model("multi_angle.h5")
-# model.fit(x_train, y_train, batch_size=2, epochs=80, validation_data=(x_test, y_test))
+# model.fit(x_train, y_train, batch_size=2, epochs=5, validation_data=(x_test, y_test))
 # model.save("multi_angle.h5")
 
 display(model, x_test, y_test)
