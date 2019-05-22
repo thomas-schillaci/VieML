@@ -74,13 +74,15 @@ class Fenetre(QtWidgets.QDialog):
 
     def save(self):
         frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-        out = cv2.VideoWriter('C:/Users/quent/Desktop/VieML.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
+        Dossier = QtWidgets.QFileDialog.getExistingDirectoryUrl(caption="SELECTIONNER DOSSIER DE DESTINATIION").path()[1:]
+        out = cv2.VideoWriter(Dossier+'/VieML.avi', cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8, (frame_width, frame_height)) #2eme parametre=fps de la video
         for i in range (len(self.ListeFrame)):
             out.write(self.ListeFrame[i])
         out.release()
         cv2.destroyAllWindows()
 
     def dataSet(self):
+        Dossier = QtWidgets.QFileDialog.getExistingDirectoryUrl(caption="SELECTIONNER DOSSIER DE DESTINATIION").path()[1:]
         fileName, _ = QtWidgets.QFileDialog.getOpenFileNames(self, caption="open file")
         self.adresse=fileName
         for i in range(len(fileName)):
@@ -100,8 +102,9 @@ class Fenetre(QtWidgets.QDialog):
                 cropped = cv2.resize(imCrop, (128, 128))
                 self.ListeFrame.append(cropped)
                 j = j + 1
+            print(Dossier)
             frame_height, frame_width = (self.ListeFrame[0]).shape[:2]
-            out = cv2.VideoWriter('C:/Users/quent/Desktop/PostTraitement/VieML '+str(i)+".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
+            out = cv2.VideoWriter(Dossier+'/VieML '+str(i)+".avi", cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'), 8,
                                   (frame_width, frame_height))  # 2eme parametre=fps de la video
             for i in range(len(self.ListeFrame)):
                 out.write(self.ListeFrame[i])
