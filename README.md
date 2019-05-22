@@ -9,6 +9,4 @@ Video information extractor by Machine Learning
 
 
 
-[Enhance!](https://www.youtube.com/watch?v=Vxq9yj2pVWk)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Vxq9yj2pVWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## [Enhance!](https://www.youtube.com/watch?v=Vxq9yj2pVWk)
