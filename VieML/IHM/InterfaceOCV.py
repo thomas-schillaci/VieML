@@ -5,6 +5,8 @@ import numpy as np
 import cv2
 import argparse
 
+from PySide2.QtGui import QPixmap
+from PySide2.QtWidgets import QLabel
 
 
 class Fenetre(QtWidgets.QDialog):
@@ -29,7 +31,11 @@ class Fenetre(QtWidgets.QDialog):
 
         #layout
         layout = QtWidgets.QVBoxLayout()
+        label = QLabel()
+        pixmap = QPixmap('IA.jpg')
+        label.setPixmap(pixmap)
         #layout.addWidget(self.button5)
+        layout.addWidget(label)
         layout.addWidget(self.button1)
         layout.addWidget(self.button2)
         #layout.addWidget(self.button3)
