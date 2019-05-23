@@ -13,7 +13,7 @@ sc1 = MinMaxScaler(feature_range = (0,1))
 sc2 = MinMaxScaler(feature_range = (0,1))
 zoom1 = 1/4. #128*128
 zoom2 = 1/2.
-path = 'C:/Users/leovu/PycharmProjects/VieML/VieML/coil-100/'
+path = 'C:/Users/leovu/Desktop/coil-100/'
 high_quality_images = []
 low_quality_images = []
 for image_name in os.listdir(path):
