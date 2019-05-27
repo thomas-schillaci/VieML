@@ -1,4 +1,3 @@
-
 from PySide2 import QtCore, QtWidgets, QtGui
 import sys
 import numpy as np
@@ -7,7 +6,7 @@ import argparse
 
 from PySide2.QtGui import QPixmap
 from PySide2.QtWidgets import QLabel
-
+import os
 
 class Fenetre(QtWidgets.QDialog):
 
@@ -126,6 +125,11 @@ class Fenetre(QtWidgets.QDialog):
        Dossier = QtWidgets.QFileDialog.getExistingDirectoryUrl(caption="SELECTIONNER DOSSIER DE DESTINATIION").path()[1:]
        fileName, _ = QtWidgets.QFileDialog.getOpenFileNames(self, caption="open file")
        self.adresse=fileName
+       AncienFichier=os.listdir(Dossier)
+       if(AncienFichier==[]):
+           DerniereUtilisation=0
+       else:
+           DerniereUtilisation=int(AncienFichier[-1][0])
        for i in range(len(fileName)):
            self.ListeFrame = []
            cap = cv2.VideoCapture(self.adresse[i])
@@ -134,14 +138,14 @@ class Fenetre(QtWidgets.QDialog):
            r = cv2.selectROI(frame, False)
            imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
            cropped = cv2.resize(imCrop, (128, 128))
-           cv2.imwrite(Dossier + '/' + str(i) + "_" + "0" + ".jpg", cropped)
+           cv2.imwrite(Dossier + '/' + str(DerniereUtilisation+i) + "_" + "0" + ".jpg", cropped)
            j = j + 1
            while (j < int(cap.get(cv2.CAP_PROP_FRAME_COUNT))):
                ret, frame = cap.read();
                if ret:
                    imCrop = frame[int(r[1]):int(r[1] + r[3]), int(r[0]):int(r[0] + r[2])]
                    cropped = cv2.resize(imCrop, (128, 128))
-                   cv2.imwrite(Dossier+'/'+str(i)+"_"+str(j)+".jpg",cropped)
+                   cv2.imwrite(Dossier+'/'+str(DerniereUtilisation+i)+"_"+str(j)+".jpg",cropped)
                j = j + 1
        cv2.destroyAllWindows()
 
